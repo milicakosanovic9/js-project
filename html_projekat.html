@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekat 3</title>
+    <script src="js/js_projekat.js"></script>
+    <link rel="stylesheet" href="css/css_projekat.css">
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="dodavanje_novog_clana_forma">
+             <form action="">
+                <p>
+                    <label for="id">ID</label>
+                    <input type="number" name="id" id="id">
+                </p>
+
+                <p>
+                    <label for="ime_i_prezime">Ime i prezime</label>
+                    <input type="text" name="ime_i_prezime" id="ime_i_prezime">
+                    <span class="greska" id="ime_i_prezime_greska"></span>
+                </p>
+
+                <p>
+                    <label for="godina_rodjenja">Godina rodjenja</label>
+                    <input type="number" name="godina_rodjenja" id="godina_rodjenja">
+                    <span class="greska" id="godina_rodjenja_greska"></span>
+                </p>
+
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </p>
+
+                <p>
+                    <label for="vrsta_clana">Vrsta člana:</label>
+                    <p><input type="radio" name="vrsta_clana" id="vrsta_clana_reg" value="regularni">regularni</p>
+                    <p><input type="radio" name="vrsta_clana" id="vrsta_clana_povl" value="povlašćeni">povlašćeni</p>
+                </p>
+
+                <p>
+                    <button id="dugme_dodaj_clana">Dodaj člana!</button>
+                </p>
+             </form>
+             <div id="provera">
+
+             </div>
+        </div>
+
+        
+
+        <div class="prikaz">
+            <div class="prikaz_podataka">
+                <table id="tabela" border="1" style="border-collapse:collapse;">
+                    <tr>
+                        <th>ID</th>
+                        <th>Ime i prezime</th>
+                        <th>Godina rodjenja</th>
+                        <th>Email</th>
+                        <th>Vrsta člana</th>
+                        <th>Članarina</th>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="update_clan" class="update_clan">
+
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+</html>
